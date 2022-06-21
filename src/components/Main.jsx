@@ -7,7 +7,7 @@ export default function Main(){
 
     const [people,setPeople] = useState(null)
 
-    const URL = 'http://localhost:3001/people/'
+    const URL = 'https://fullstack-mern-backend-isya.herokuapp.com/people/'
 
     const getPeople = async () => {
       const data = await fetch(URL).then(res => res.json())
